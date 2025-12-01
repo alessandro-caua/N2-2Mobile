@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="🎮 Nova Jogatina"
-            android:textSize="24sp"
+            android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary" />
 
@@ -35,8 +35,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card_background"
             app:cardCornerRadius="16dp"
-            app:cardElevation="4dp">
+            app:cardElevation="8dp"
+            app:strokeColor="@color/input_stroke"
+            app:strokeWidth="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,12 +52,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nome do Jogo"
-                    app:boxBackgroundMode="outline"
+                    app:boxBackgroundMode="filled"
+                    app:boxBackgroundColor="@color/input_background"
                     app:boxCornerRadiusBottomEnd="12dp"
                     app:boxCornerRadiusBottomStart="12dp"
                     app:boxCornerRadiusTopEnd="12dp"
                     app:boxCornerRadiusTopStart="12dp"
-                    app:boxStrokeColor="@color/primary"
+                    app:boxStrokeColor="@color/input_stroke_focused"
+                    app:hintTextColor="@color/primary"
                     app:startIconDrawable="@drawable/ic_game"
                     app:startIconTint="@color/primary">
 
@@ -63,7 +68,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="text"
-                        android:maxLines="1" />
+                        android:maxLines="1"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_hint" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,13 +80,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:hint="Seu Nome"
-                    app:boxBackgroundMode="outline"
+                    app:boxBackgroundMode="filled"
+                    app:boxBackgroundColor="@color/input_background"
                     app:boxCornerRadiusBottomEnd="12dp"
                     app:boxCornerRadiusBottomStart="12dp"
                     app:boxCornerRadiusTopEnd="12dp"
                     app:boxCornerRadiusTopStart="12dp"
-                    app:boxStrokeColor="@color/primary"
-                    app:startIconDrawable="@android:drawable/ic_menu_myplaces"
+                    app:boxStrokeColor="@color/input_stroke_focused"
+                    app:hintTextColor="@color/primary"
+                    app:startIconDrawable="@drawable/ic_players"
                     app:startIconTint="@color/primary">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -87,7 +96,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
-                        android:maxLines="1" />
+                        android:maxLines="1"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_hint" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,15 +107,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:hint="Data (dd/mm/yyyy)"
-                    app:boxBackgroundMode="outline"
+                    android:hint="📅 Data"
+                    app:boxBackgroundMode="filled"
+                    app:boxBackgroundColor="@color/input_background"
                     app:boxCornerRadiusBottomEnd="12dp"
                     app:boxCornerRadiusBottomStart="12dp"
                     app:boxCornerRadiusTopEnd="12dp"
                     app:boxCornerRadiusTopStart="12dp"
-                    app:boxStrokeColor="@color/primary"
-                    app:startIconDrawable="@android:drawable/ic_menu_today"
-                    app:startIconTint="@color/primary">
+                    app:boxStrokeColor="@color/input_stroke_focused"
+                    app:hintTextColor="@color/primary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etDate"
@@ -113,7 +124,9 @@
                         android:focusable="false"
                         android:clickable="true"
                         android:inputType="none"
-                        android:maxLines="1" />
+                        android:maxLines="1"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_hint" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -122,15 +135,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:hint="Horário (HH:mm)"
-                    app:boxBackgroundMode="outline"
+                    android:hint="⏰ Horário"
+                    app:boxBackgroundMode="filled"
+                    app:boxBackgroundColor="@color/input_background"
                     app:boxCornerRadiusBottomEnd="12dp"
                     app:boxCornerRadiusBottomStart="12dp"
                     app:boxCornerRadiusTopEnd="12dp"
                     app:boxCornerRadiusTopStart="12dp"
-                    app:boxStrokeColor="@color/primary"
-                    app:startIconDrawable="@android:drawable/ic_menu_recent_history"
-                    app:startIconTint="@color/primary">
+                    app:boxStrokeColor="@color/input_stroke_focused"
+                    app:hintTextColor="@color/primary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etTime"
@@ -139,7 +152,9 @@
                         android:focusable="false"
                         android:clickable="true"
                         android:inputType="none"
-                        android:maxLines="1" />
+                        android:maxLines="1"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_hint" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -148,22 +163,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:hint="Local (opcional)"
-                    app:boxBackgroundMode="outline"
+                    android:hint="📍 Local (opcional)"
+                    app:boxBackgroundMode="filled"
+                    app:boxBackgroundColor="@color/input_background"
                     app:boxCornerRadiusBottomEnd="12dp"
                     app:boxCornerRadiusBottomStart="12dp"
                     app:boxCornerRadiusTopEnd="12dp"
                     app:boxCornerRadiusTopStart="12dp"
-                    app:boxStrokeColor="@color/primary"
-                    app:startIconDrawable="@android:drawable/ic_dialog_map"
-                    app:startIconTint="@color/primary">
+                    app:boxStrokeColor="@color/input_stroke_focused"
+                    app:hintTextColor="@color/primary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etLocation"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="text"
-                        android:maxLines="1" />
+                        android:maxLines="1"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_hint" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -172,15 +189,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:hint="Máximo de Jogadores"
-                    app:boxBackgroundMode="outline"
+                    android:hint="👥 Máximo de Jogadores"
+                    app:boxBackgroundMode="filled"
+                    app:boxBackgroundColor="@color/input_background"
                     app:boxCornerRadiusBottomEnd="12dp"
                     app:boxCornerRadiusBottomStart="12dp"
                     app:boxCornerRadiusTopEnd="12dp"
                     app:boxCornerRadiusTopStart="12dp"
-                    app:boxStrokeColor="@color/primary"
-                    app:startIconDrawable="@drawable/ic_players"
-                    app:startIconTint="@color/primary">
+                    app:boxStrokeColor="@color/input_stroke_focused"
+                    app:hintTextColor="@color/primary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etMaxPlayers"
@@ -188,7 +205,9 @@
                         android:layout_height="wrap_content"
                         android:inputType="number"
                         android:text="4"
-                        android:maxLines="1" />
+                        android:maxLines="1"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_hint" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -197,13 +216,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:hint="Observações (opcional)"
-                    app:boxBackgroundMode="outline"
+                    android:hint="📝 Observações (opcional)"
+                    app:boxBackgroundMode="filled"
+                    app:boxBackgroundColor="@color/input_background"
                     app:boxCornerRadiusBottomEnd="12dp"
                     app:boxCornerRadiusBottomStart="12dp"
                     app:boxCornerRadiusTopEnd="12dp"
                     app:boxCornerRadiusTopStart="12dp"
-                    app:boxStrokeColor="@color/primary">
+                    app:boxStrokeColor="@color/input_stroke_focused"
+                    app:hintTextColor="@color/primary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etNotes"
@@ -212,7 +233,9 @@
                         android:inputType="textMultiLine"
                         android:minLines="3"
                         android:maxLines="5"
-                        android:gravity="top" />
+                        android:gravity="top"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_hint" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -220,7 +243,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="24dp"
                     android:text="🎨 Cor do Card"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -238,7 +261,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_margin="6dp"
-                        android:background="@drawable/bg_button_primary"
+                        android:background="@drawable/bg_color_selector"
                         android:backgroundTint="@color/game_blue"
                         android:clickable="true"
                         android:focusable="true" />
@@ -248,7 +271,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_margin="6dp"
-                        android:background="@drawable/bg_button_primary"
+                        android:background="@drawable/bg_color_selector"
                         android:backgroundTint="@color/game_purple"
                         android:clickable="true"
                         android:focusable="true" />
@@ -258,7 +281,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_margin="6dp"
-                        android:background="@drawable/bg_button_primary"
+                        android:background="@drawable/bg_color_selector"
                         android:backgroundTint="@color/game_orange"
                         android:clickable="true"
                         android:focusable="true" />
@@ -268,7 +291,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_margin="6dp"
-                        android:background="@drawable/bg_button_primary"
+                        android:background="@drawable/bg_color_selector"
                         android:backgroundTint="@color/game_green"
                         android:clickable="true"
                         android:focusable="true" />
@@ -278,7 +301,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_margin="6dp"
-                        android:background="@drawable/bg_button_primary"
+                        android:background="@drawable/bg_color_selector"
                         android:backgroundTint="@color/game_red"
                         android:clickable="true"
                         android:focusable="true" />
@@ -288,7 +311,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_margin="6dp"
-                        android:background="@drawable/bg_button_primary"
+                        android:background="@drawable/bg_color_selector"
                         android:backgroundTint="@color/game_teal"
                         android:clickable="true"
                         android:focusable="true" />
@@ -298,7 +321,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_margin="6dp"
-                        android:background="@drawable/bg_button_primary"
+                        android:background="@drawable/bg_color_selector"
                         android:backgroundTint="@color/game_pink"
                         android:clickable="true"
                         android:focusable="true" />
@@ -313,7 +336,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
             android:orientation="horizontal"
             android:gravity="center">
 
@@ -325,6 +349,7 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
                 android:text="Cancelar"
+                android:textColor="@color/primary"
                 android:textSize="16sp"
                 app:cornerRadius="12dp"
                 app:strokeColor="@color/primary"
@@ -336,11 +361,13 @@
                 android:layout_height="56dp"
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
-                android:text="Criar Jogatina"
+                android:text="Criar"
+                android:textColor="@color/text_on_primary"
                 android:textSize="16sp"
                 android:backgroundTint="@color/primary"
                 app:cornerRadius="12dp"
                 app:icon="@drawable/ic_check"
+                app:iconTint="@color/text_on_primary"
                 app:iconGravity="textStart" />
 
         </LinearLayout>

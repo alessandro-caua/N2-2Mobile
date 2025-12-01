@@ -1,50 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Cores Principais -->
-    <color name="primary">#6C63FF</color>
-    <color name="primary_dark">#5548E6</color>
-    <color name="primary_light">#8B84FF</color>
-    <color name="accent">#FF6584</color>
+    <!-- Cores Principais - Tema Escuro -->
+    <color name="primary">#BB86FC</color>
+    <color name="primary_dark">#9A67EA</color>
+    <color name="primary_light">#D4BBFF</color>
+    <color name="accent">#03DAC6</color>
+    <color name="accent_secondary">#FF7597</color>
     
     <!-- Cores de Status -->
     <color name="status_success">#4CAF50</color>
     <color name="status_warning">#FFC107</color>
-    <color name="status_error">#F44336</color>
-    <color name="status_info">#2196F3</color>
-    <color name="success">#4CAF50</color>
-    <color name="warning">#FFC107</color>
-    <color name="error">#F44336</color>
-    <color name="info">#2196F3</color>
+    <color name="status_error">#CF6679</color>
+    <color name="status_info">#64B5F6</color>
+    <color name="success">#81C784</color>
+    <color name="warning">#FFD54F</color>
+    <color name="error">#CF6679</color>
+    <color name="info">#64B5F6</color>
     
-    <!-- Cores de Jogos -->
-    <color name="game_blue">#2196F3</color>
-    <color name="game_purple">#9C27B0</color>
-    <color name="game_orange">#FF9800</color>
-    <color name="game_green">#4CAF50</color>
-    <color name="game_red">#F44336</color>
-    <color name="game_teal">#009688</color>
-    <color name="game_pink">#E91E63</color>
-    <color name="game_indigo">#3F51B5</color>
+    <!-- Cores de Jogos - Mais vibrantes para tema escuro -->
+    <color name="game_blue">#64B5F6</color>
+    <color name="game_purple">#CE93D8</color>
+    <color name="game_orange">#FFB74D</color>
+    <color name="game_green">#81C784</color>
+    <color name="game_red">#EF5350</color>
+    <color name="game_teal">#4DB6AC</color>
+    <color name="game_pink">#F48FB1</color>
+    <color name="game_indigo">#7986CB</color>
     
-    <!-- Cores de Fundo -->
-    <color name="background">#F5F7FA</color>
-    <color name="surface">#FFFFFF</color>
-    <color name="card_background">#FFFFFF</color>
+    <!-- Cores de Fundo - Tema Escuro -->
+    <color name="background">#121212</color>
+    <color name="background_elevated">#1E1E1E</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="surface_elevated">#2D2D2D</color>
+    <color name="card_background">#252525</color>
     
-    <!-- Cores de Texto -->
-    <color name="text_primary">#212121</color>
-    <color name="text_secondary">#757575</color>
-    <color name="text_hint">#BDBDBD</color>
+    <!-- Cores de Texto - Alta visibilidade -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_hint">#808080</color>
     <color name="text_white">#FFFFFF</color>
+    <color name="text_on_primary">#000000</color>
+    
+    <!-- Cores de Input -->
+    <color name="input_background">#2D2D2D</color>
+    <color name="input_stroke">#404040</color>
+    <color name="input_stroke_focused">#BB86FC</color>
+    <color name="input_text">#FFFFFF</color>
+    <color name="input_hint">#888888</color>
     
     <!-- Cores Padrão -->
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     
     <!-- Cores Antigas (compatibilidade) -->
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#6C63FF</color>
-    <color name="purple_700">#5548E6</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#BB86FC</color>
+    <color name="purple_700">#9A67EA</color>
+    <color name="teal_200">#03DAC6</color>
+    <color name="teal_700">#018786</color>
 </resources>

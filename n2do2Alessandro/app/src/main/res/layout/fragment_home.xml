@@ -12,11 +12,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Header com gradiente -->
+        <!-- Header -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_gradient_fab"
+            android:background="@color/surface"
             android:orientation="vertical"
             android:padding="20dp"
             android:elevation="4dp">
@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="🎮 Jogatinas"
-                android:textColor="@color/white"
+                android:textColor="@color/primary"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
@@ -34,8 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="Organize suas partidas com os amigos"
-                android:textColor="@color/white"
-                android:alpha="0.9"
+                android:textColor="@color/text_secondary"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -55,6 +54,7 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/ic_game"
+                app:tint="@color/primary"
                 android:alpha="0.5"
                 android:contentDescription="Sem jogatinas" />
 
@@ -90,7 +90,7 @@
 
     </LinearLayout>
 
-    <!-- FAB com gradiente -->
+    <!-- FAB -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAddGame"
         android:layout_width="wrap_content"
@@ -99,8 +99,8 @@
         android:layout_margin="20dp"
         android:contentDescription="Criar Jogatina"
         android:src="@drawable/ic_add"
-        app:backgroundTint="@color/accent"
-        app:tint="@color/white"
+        app:backgroundTint="@color/primary"
+        app:tint="@color/text_on_primary"
         app:borderWidth="0dp"
         app:elevation="8dp" />
 

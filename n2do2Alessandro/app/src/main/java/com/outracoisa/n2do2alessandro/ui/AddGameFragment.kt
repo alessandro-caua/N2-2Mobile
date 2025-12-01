@@ -110,13 +110,13 @@ class AddGameFragment : Fragment() {
         val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
         val timeFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
         
-        binding.etGameDate.setOnClickListener {
+        binding.etDate.setOnClickListener {
             DatePickerDialog(
                 requireContext(),
                 { _, year, month, dayOfMonth ->
                     calendar.set(year, month, dayOfMonth)
                     selectedDate = dateFormat.format(calendar.time)
-                    binding.etGameDate.setText(selectedDate)
+                    binding.etDate.setText(selectedDate)
                 },
                 calendar.get(Calendar.YEAR),
                 calendar.get(Calendar.MONTH),
@@ -124,14 +124,14 @@ class AddGameFragment : Fragment() {
             ).show()
         }
         
-        binding.etGameTime.setOnClickListener {
+        binding.etTime.setOnClickListener {
             TimePickerDialog(
                 requireContext(),
                 { _, hourOfDay, minute ->
                     calendar.set(Calendar.HOUR_OF_DAY, hourOfDay)
                     calendar.set(Calendar.MINUTE, minute)
                     selectedTime = timeFormat.format(calendar.time)
-                    binding.etGameTime.setText(selectedTime)
+                    binding.etTime.setText(selectedTime)
                 },
                 calendar.get(Calendar.HOUR_OF_DAY),
                 calendar.get(Calendar.MINUTE),
@@ -159,7 +159,7 @@ class AddGameFragment : Fragment() {
         
         // Validation
         if (gameName.isEmpty()) {
-            binding.tilGameName.error = "Digite o nome do jogo"
+            Toast.makeText(requireContext(), "Digite o nome do jogo", Toast.LENGTH_SHORT).show()
             return
         }
         
@@ -171,7 +171,7 @@ class AddGameFragment : Fragment() {
         }
         
         if (hostName.isEmpty()) {
-            binding.tilHostName.error = "Digite o nome do organizador"
+            Toast.makeText(requireContext(), "Digite o nome do organizador", Toast.LENGTH_SHORT).show()
             return
         }
         
@@ -190,14 +190,9 @@ class AddGameFragment : Fragment() {
         }
         
         if (maxPlayers <= 0) {
-            binding.tilMaxPlayers.error = "Digite um número válido de jogadores"
+            Toast.makeText(requireContext(), "Digite um número válido de jogadores", Toast.LENGTH_SHORT).show()
             return
         }
-        
-        // Clear errors
-        binding.tilGameName.error = null
-        binding.tilHostName.error = null
-        binding.tilMaxPlayers.error = null
         
         // Create entity
         val gameSession = GameSessionEntity(
