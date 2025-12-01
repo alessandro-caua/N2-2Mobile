@@ -28,6 +28,12 @@ class DetailsViewModel(application: Application) : AndroidViewModel(application)
         }
     }
     
+    fun deleteById(id: Int) {
+        viewModelScope.launch {
+            repository.deleteById(id)
+        }
+    }
+    
     fun updateStatus(id: Int, status: String) {
         viewModelScope.launch {
             repository.updateStatus(id, status)

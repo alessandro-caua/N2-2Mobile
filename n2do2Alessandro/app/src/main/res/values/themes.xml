@@ -1,80 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     
-    <style name="Theme.N2do2Alessandro" parent="Theme.MaterialComponents.NoActionBar">
-        <!-- Cores Primárias -->
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryVariant">@color/primary_dark</item>
-        <item name="colorOnPrimary">@color/text_on_primary</item>
-        
-        <!-- Cores Secundárias -->
-        <item name="colorSecondary">@color/accent</item>
-        <item name="colorSecondaryVariant">@color/accent</item>
-        <item name="colorOnSecondary">@color/black</item>
-        
-        <!-- Cores de Superfície - Tema Escuro -->
-        <item name="colorSurface">@color/surface</item>
-        <item name="colorOnSurface">@color/text_primary</item>
-        <item name="android:colorBackground">@color/background</item>
-        <item name="colorOnBackground">@color/text_primary</item>
-        
-        <!-- Cores de Erro -->
-        <item name="colorError">@color/error</item>
-        <item name="colorOnError">@color/black</item>
-        
+    <!-- Tema simplificado para Jetpack Compose -->
+    <style name="Theme.N2do2Alessandro" parent="android:Theme.Material.NoActionBar">
         <!-- Status Bar e Navigation Bar -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/background</item>
         <item name="android:navigationBarColor" tools:targetApi="l">@color/background</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
         
-        <!-- TextInputLayout Styling -->
-        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
-        
-        <!-- Cor do texto padrão -->
-        <item name="android:textColor">@color/text_primary</item>
-        <item name="android:textColorPrimary">@color/text_primary</item>
-        <item name="android:textColorSecondary">@color/text_secondary</item>
-        <item name="android:textColorHint">@color/text_hint</item>
-        
-        <!-- EditText Styling -->
-        <item name="android:editTextColor">@color/text_primary</item>
-        <item name="editTextColor">@color/text_primary</item>
-    </style>
-    
-    <!-- Estilo para TextInputLayout -->
-    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxBackgroundColor">@color/input_background</item>
-        <item name="boxStrokeColor">@color/input_stroke_focused</item>
-        <item name="hintTextColor">@color/primary</item>
-        <item name="android:textColorHint">@color/text_hint</item>
-        <item name="boxStrokeWidth">1dp</item>
-        <item name="boxStrokeWidthFocused">2dp</item>
-    </style>
-    
-    <!-- Estilo para Cards -->
-    <style name="Widget.App.CardView" parent="Widget.MaterialComponents.CardView">
-        <item name="cardBackgroundColor">@color/card_background</item>
-        <item name="cardElevation">4dp</item>
-        <item name="cardCornerRadius">16dp</item>
-    </style>
-    
-    <!-- Estilo para Botões -->
-    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
-        <item name="backgroundTint">@color/primary</item>
-        <item name="android:textColor">@color/text_on_primary</item>
-        <item name="cornerRadius">12dp</item>
-    </style>
-    
-    <!-- Estilo para Botões Outline -->
-    <style name="Widget.App.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
-        <item name="strokeColor">@color/primary</item>
-        <item name="android:textColor">@color/primary</item>
-        <item name="cornerRadius">12dp</item>
-    </style>
-    
-    <!-- Estilo para Bottom Navigation Active Indicator -->
-    <style name="Widget.App.BottomNavigationActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/surface_elevated</item>
+        <!-- Background -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
     </style>
     
 </resources>
