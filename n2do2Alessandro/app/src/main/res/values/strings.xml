@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">n2do2Alessandro</string>
+    <string name="app_name">Jogatinas</string>
+    <string name="catalog">Jogatinas</string>
+    <string name="favorites">Favoritas</string>
+    <string name="details">Detalhes da Jogatina</string>
+    <string name="add_game">Nova Jogatina</string>
+    <string name="delete_game">Excluir Jogatina</string>
+    <string name="favorite">Favoritar</string>
+    <string name="confirm_presence">Confirmar Presença</string>
+    <string name="empty_sessions">Nenhuma jogatina agendada</string>
+    <string name="empty_favorites">Nenhuma favorita ainda</string>
+    <string name="status_scheduled">Agendado</string>
+    <string name="status_completed">Realizado</string>
+    <string name="status_cancelled">Cancelado</string>
+    <string name="players_count">%1$d/%2$d jogadores</string>
+    <string name="session_date_time">%1$s às %2$s</string>
 </resources>
